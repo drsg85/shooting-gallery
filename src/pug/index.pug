@@ -7,6 +7,22 @@ html(lang="en")
 
         link(rel="stylesheet", href="styles.css")
 
-        title Document
+        title Тир39
         
     body
+        .container
+            header.hero
+                .hero__top
+                    p.hero__logo Тир39
+
+                    .hero__nav.hero__nav--hidden
+                        include modules/_menu.pug
+
+                    .menu-button
+                        .menu-button__middle
+                .hero__content
+                    .hero-caption
+                        h1.hero-caption__title Тир39
+                        p.hero-caption__subtitle Место, где весело стрелять     
+
+    script(src="scripts.js")
