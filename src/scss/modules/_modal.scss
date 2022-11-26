@@ -1,0 +1,58 @@
+.btn {
+	border: 1px solid grey;
+	cursor: pointer;
+}
+
+.modals__overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal {
+	background-color: #fff;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.modal--1 {
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkgXWUMr_Vcw6KhaHLTy0SNSljgWrMIi5rFQ&usqp=CAU');
+	color: green;
+	font-size: 35px;
+	text-align: center;
+}
+
+.modal--2 {
+	background-color: tan;
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUDdTpf8NQuBtdrBgSKRtn7chovffMKPtiA&usqp=CAU');
+	color: black;
+	font-size: 22px;
+	text-align: right;
+}
+
+.modals__overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+	display: block;
+}

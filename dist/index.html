@@ -13,13 +13,14 @@
     <div class="container">
         <header class="hero">
             <div class="hero__top">
-                <p class="hero__logo">Тир39</p>
+                <div class="hero__logo"><img src="./img/logo1.png" alt="Логотип центра профессиональной подготовки в Калининграде" /></div>
                 <div class="hero__nav hero__nav--hidden">
                     <nav class="main-nav">
                         <ul class="main-nav__list">
                             <li class="main-nav__item"><a class="main-nav__link smooth-trigger" href="index.html">Главная</a></li>
                             <li class="main-nav__item"><a class="main-nav__link smooth-trigger" href="index.html#services">Услуги</a></li>
                             <li class="main-nav__item"><a class="main-nav__link smooth-trigger" href="index.html#aboutus">О Нас</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link smooth-trigger" href="index.html#aboutus">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -29,11 +30,66 @@
             </div>
             <div class="hero__content">
                 <div class="hero-caption">
-                    <h1 class="hero-caption__title">Тир39</h1>
-                    <p class="hero-caption__subtitle">Место, где весело стрелять </p>
+                    <h1 class="hero-caption__title">Центр подготовки</h1>
+                    <p class="hero-caption__subtitle">Стрелковый тир<br><span>в Калининграде</p>
                 </div>
+                <div class="hero__button"><a class="button" href="#service">К услугам</a></div>
+                <p class="hero__desc">Стань профессионалом или интересно проведи время</p>
             </div>
         </header>
+        <section class="service" id="service">
+            <h2 class="service__title">Наши услуги</h2>
+            <ul class="service__tabs">
+                <li class="service__tab" data-tab="#tab_1">Учебные курсы</li>
+                <li class="service__tab" data-tab="#tab_2">Стрельба</li>
+                <li class="service__tab" data-tab="#tab_3">Мастерская</li>
+            </ul>
+            <div class="service__content">
+                <div class="service__content-item" id="tab_1">
+                    <div class="practice">
+                        <div class="practice__item" data-path="me-popup">
+                            <div class="practice__header">
+                                <p class="practice__title">Частный охранник</p>
+                            </div>
+                            <div class="practice__image"><img src="./img/guard.jpg" alt="Изображение охранника Тир39" /></div>
+                            <div class="service__button btn">Подробнее</div>
+                        </div>
+                        <div class="practice__item" data-path="secondary">
+                            <div class="practice__header">
+                                <p class="practice__title">Пулевая стрельба</p>
+                            </div>
+                            <div class="practice__image"><img src="./img/shooting.jpg" alt="Изображение пулевой стрельбы Тир39" /></div>
+                            <div class="service__button btn">Подробнее</div>
+                        </div>
+                        <div class="practice__item" data-path="secondary">
+                            <div class="practice__header">
+                                <p class="practice__title">Повышение квалификации</p>
+                            </div>
+                            <div class="practice__image"><img src="./img/training.jpg" alt="Изображение повышения квалификации Тир39" /></div>
+                            <div class="service__button btn">Подробнее</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service__content-item" id="tab_2">
+                    <div class="shooting">
+                        <h3 class="shooting__title">Стрельба с инструктором</h3>
+                        <p class="shooting__subtitle">Всему обучим</p>
+                    </div>
+                </div>
+                <div class="service__content-item" id="tab_3">
+                    <div class="workshop">
+                        <h3 class="workshop__title">Пушка на прокачку</h3>
+                        <p class="workshop__subtitle">Всему починим</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modals">
+            <div class="modals__overlay">
+                <div class="modal modal--1" data-target="me-popup">Одно окно</div>
+                <div class="modal modal--2" data-target="secondary">Это уже совсем другое окно</div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="scripts.js"></script>

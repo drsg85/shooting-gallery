@@ -12,7 +12,7 @@
     align-items: center;
 
     // visual
-    background-color: grey;
+    background: rgba(black, 0.9);
 
     @include atDesktopS {
         // positioning
@@ -67,5 +67,5 @@
 
 .main-nav__item a:hover {
     // typography
-    color: #f2b979;
+    color: $golden;
 }

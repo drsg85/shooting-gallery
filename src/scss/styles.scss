@@ -10,9 +10,16 @@
 @import 'fonts/fonts';
 
 // modules
+@import 'modules/modal';
+@import 'modules/button';
 
 // hero blocks
 @import 'modules/hero';
+@import 'modules/hero-caption';
 @import 'modules/menu-button';
 @import 'modules/main-nav';
 
+@import 'modules/service';
+@import 'modules/practice';
+@import 'modules/shooting';
+@import 'modules/workshop';

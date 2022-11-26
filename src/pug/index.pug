@@ -13,7 +13,8 @@ html(lang="en")
         .container
             header.hero
                 .hero__top
-                    p.hero__logo Тир39
+                    .hero__logo
+                        img(src="./img/logo1.png", alt="Логотип центра профессиональной подготовки в Калининграде")
 
                     .hero__nav.hero__nav--hidden
                         include modules/_menu.pug
@@ -22,7 +23,53 @@ html(lang="en")
                         .menu-button__middle
                 .hero__content
                     .hero-caption
-                        h1.hero-caption__title Тир39
-                        p.hero-caption__subtitle Место, где весело стрелять     
+                        h1.hero-caption__title Центр подготовки
+                        p.hero-caption__subtitle Стрелковый тир<br><span>в Калининграде
+                    .hero__button
+                        a.button(href='#service') К услугам
+                    p.hero__desc Стань профессионалом или интересно проведи время
+
+            section.service#service
+                h2.service__title Наши услуги
+                ul.service__tabs
+                    li.service__tab(data-tab='#tab_1') Учебные курсы
+                    li.service__tab(data-tab='#tab_2') Стрельба
+                    li.service__tab(data-tab='#tab_3') Мастерская
+                .service__content
+                    .service__content-item#tab_1
+                        .practice
+                            .practice__item(data-path='me-popup')
+                                .practice__header
+                                    p.practice__title Частный охранник
+                                .practice__image
+                                    img(src="./img/guard.jpg", alt="Изображение охранника Тир39")
+                                .service__button.btn Подробнее
+                            .practice__item(data-path='secondary')
+                                .practice__header
+                                    p.practice__title Пулевая стрельба
+                                .practice__image
+                                    img(src="./img/shooting.jpg", alt="Изображение пулевой стрельбы Тир39")
+                                .service__button.btn Подробнее
+                            .practice__item(data-path='secondary')
+                                .practice__header
+                                    p.practice__title Повышение квалификации
+                                .practice__image
+                                    img(src="./img/training.jpg", alt="Изображение повышения квалификации Тир39")
+                                .service__button.btn Подробнее
+                    .service__content-item#tab_2
+                        .shooting
+                            h3.shooting__title Стрельба с инструктором
+                            p.shooting__subtitle Всему обучим
+                    .service__content-item#tab_3
+                        .workshop
+                            h3.workshop__title Пушка на прокачку
+                            p.workshop__subtitle Всему починим
+
+
+
+            include modules/_modal.pug                
+                        
+
+
 
     script(src="scripts.js")

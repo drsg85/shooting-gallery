@@ -1,0 +1,44 @@
+.practice {
+    display: flex;
+    max-width: 1050px;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.practice__item {
+    position: relative;
+    width: 270px;
+    height: 350px;
+    border: 2px solid $golden;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+
+.practice__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: $black;
+}
+
+.practice__title {
+    margin: 0;
+    color: $golden;
+    font-family: $titleFont;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.practice__image {
+    height: 300px;
+}
+
+.practice__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
