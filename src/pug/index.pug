@@ -15,10 +15,8 @@ html(lang="en")
                 .hero__top
                     .hero__logo
                         img(src="./img/logo1.png", alt="Логотип центра профессиональной подготовки в Калининграде")
-
                     .hero__nav.hero__nav--hidden
                         include modules/_menu.pug
-
                     .menu-button
                         .menu-button__middle
                 .hero__content
@@ -28,7 +26,23 @@ html(lang="en")
                     .hero__button
                         a.button(href='#service') К услугам
                     p.hero__desc Стань профессионалом или интересно проведи время
-
+            section.about
+                h2.about__title О нас
+                .about__content 
+                    .about__pic 
+                        img(src="./img/about.jpg", alt="Изображение О Нас")
+                    .about__desc 
+                        p.about__text Наш центр является учебно-спортивной базой по подготовке и повышению квалификации граждан, осуществляющих спортивную, охранную деятельность, владельцев гражданского оружия.
+                        p.about__text НОУ "Центр профессиональной подготовки" - это уникальное учебное заведение города Калининграда, осуществляющее следующие виды деятельности в сфере образования и спорта взрослых и молодежи города
+                        p.about__text Сдача периодической проверки и квалификационного экзамена у частных охранников и работников юридических лиц с особыми уставными задачами проводится - бесплатно.
+                .about__slider 
+                    ul.slider
+                        li.about__slider-item.slider-item--family Для&nbsp;всей<br> семьи
+                        li.about__slider-item.slider-item--weather В&nbsp;любую<br> погоду
+                        li.about__slider-item.slider-item--safe Полностью безопасно
+                        li.about__slider-item.slider-item--far Высокая дальность поражения       
+                        li.about__slider-item.slider-item--clothes Не&nbsp;требуется спец.одежда       
+                        li.about__slider-item.slider-item--educational Образовательное учреждение       
             section.service#service
                 h2.service__title Наши услуги
                 ul.service__tabs
@@ -38,7 +52,7 @@ html(lang="en")
                 .service__content
                     .service__content-item#tab_1
                         .practice
-                            .practice__item(data-path='me-popup')
+                            .practice__item(data-path='guard')
                                 .practice__header
                                     p.practice__title Частный охранник
                                 .practice__image
@@ -64,6 +78,23 @@ html(lang="en")
                         .workshop
                             h3.workshop__title Пушка на прокачку
                             p.workshop__subtitle Всему починим
+            section.shootingsday
+                .shootingsday__content
+                    .shootingsday__header 
+                        h3.shootingsday__title День стрелка
+                        p.shootingsday__days Каждую <span>субботу</span> и <span>воскресенье</span>
+                        p.shootingsday__time 09:00 - 18:00
+                    .shootingsday__cta 
+                        p.shootingsday__list-title Приходите
+                        ul.shootingsday__cta-list
+                            li.shootingsday__cta-item - лично
+                            li.shootingsday__cta-item - с детьми старше 14 лет
+                            li.shootingsday__cta-item - всей семьей
+                            li.shootingsday__cta-item - с друзьями
+                            li.shootingsday__cta-item - с коллегами
+                    p.shootingsday__profit Приобретайте море положительных эмоций и&nbsp;позитива!
+
+
 
 
 

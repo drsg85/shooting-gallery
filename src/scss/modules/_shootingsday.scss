@@ -1,0 +1,91 @@
+.shootingsday {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+    background-size: cover; 
+    background-image: url('/img/shootingsday.jpg');
+    font-family: $titleFont;
+}
+
+.shootingsday__content {
+    margin-left: auto;
+}
+
+.shootingsday__header {
+    margin-bottom: 30px;
+    color: $golden;
+}
+
+.shootingsday__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.shootingsday__days {
+    margin: 0;
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.shootingsday__time {
+    margin: 0;
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.shootingsday__days span {
+    text-transform: uppercase;
+}
+
+.shootingsday__cta {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shootingsday__list-title {
+    margin: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.shootingsday__cta-list {
+    margin: 0;
+    padding: 0;
+    padding-left: 130px;
+    color: white;
+    text-align: left;
+    list-style-type: none;
+}
+
+.shootingsday__cta-item {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.shootingsday__cta-item:last-child {
+    margin-bottom: 0;
+}
+
+.shootingsday__profit {
+    max-width: 470px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: $golden;
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: 400;
+    text-align: center;
+}

@@ -37,6 +37,27 @@
                 <p class="hero__desc">Стань профессионалом или интересно проведи время</p>
             </div>
         </header>
+        <section class="about">
+            <h2 class="about__title">О нас</h2>
+            <div class="about__content">
+                <div class="about__pic"> <img src="./img/about.jpg" alt="Изображение О Нас" /></div>
+                <div class="about__desc">
+                    <p class="about__text">Наш центр является учебно-спортивной базой по подготовке и повышению квалификации граждан, осуществляющих спортивную, охранную деятельность, владельцев гражданского оружия.</p>
+                    <p class="about__text">НОУ "Центр профессиональной подготовки" - это уникальное учебное заведение города Калининграда, осуществляющее следующие виды деятельности в сфере образования и спорта взрослых и молодежи города</p>
+                    <p class="about__text">Сдача периодической проверки и квалификационного экзамена у частных охранников и работников юридических лиц с особыми уставными задачами проводится - бесплатно.</p>
+                </div>
+            </div>
+            <div class="about__slider">
+                <ul class="slider">
+                    <li class="about__slider-item slider-item--family">Для&nbsp;всей<br> семьи</li>
+                    <li class="about__slider-item slider-item--weather">В&nbsp;любую<br> погоду</li>
+                    <li class="about__slider-item slider-item--safe">Полностью безопасно</li>
+                    <li class="about__slider-item slider-item--far">Высокая дальность поражения </li>
+                    <li class="about__slider-item slider-item--clothes">Не&nbsp;требуется спец.одежда </li>
+                    <li class="about__slider-item slider-item--educational">Образовательное учреждение </li>
+                </ul>
+            </div>
+        </section>
         <section class="service" id="service">
             <h2 class="service__title">Наши услуги</h2>
             <ul class="service__tabs">
@@ -47,7 +68,7 @@
             <div class="service__content">
                 <div class="service__content-item" id="tab_1">
                     <div class="practice">
-                        <div class="practice__item" data-path="me-popup">
+                        <div class="practice__item" data-path="guard">
                             <div class="practice__header">
                                 <p class="practice__title">Частный охранник</p>
                             </div>
@@ -84,10 +105,40 @@
                 </div>
             </div>
         </section>
+        <section class="shootingsday">
+            <div class="shootingsday__content">
+                <div class="shootingsday__header">
+                    <h3 class="shootingsday__title">День стрелка</h3>
+                    <p class="shootingsday__days">Каждую <span>субботу</span> и <span>воскресенье</span></p>
+                    <p class="shootingsday__time">09:00 - 18:00</p>
+                </div>
+                <div class="shootingsday__cta">
+                    <p class="shootingsday__list-title">Приходите</p>
+                    <ul class="shootingsday__cta-list">
+                        <li class="shootingsday__cta-item">- лично</li>
+                        <li class="shootingsday__cta-item">- с детьми старше 14 лет</li>
+                        <li class="shootingsday__cta-item">- всей семьей</li>
+                        <li class="shootingsday__cta-item">- с друзьями</li>
+                        <li class="shootingsday__cta-item">- с коллегами</li>
+                    </ul>
+                </div>
+                <p class="shootingsday__profit">Приобретайте море положительных эмоций и&nbsp;позитива!</p>
+            </div>
+        </section>
         <div class="modals">
             <div class="modals__overlay">
-                <div class="modal modal--1" data-target="me-popup">Одно окно</div>
-                <div class="modal modal--2" data-target="secondary">Это уже совсем другое окно</div>
+                <div class="modal modal--1" data-target="guard">
+                    <div class="modal__header">Частный охранник</div>
+                    <div class="modal__content">
+                        <p class="modal__text">НОУ «Центр профессиональной подготовки» в Калининграде проводит обучение и подготовку высококлассных частных охранников 4,5,6 разрядов.</p>
+                        <p class="modal__text">После обучения, проводится сдача квалификационных экзаменов с присвоением разряда и выдачей свидетельства о присвоении разряда государственного образца.</p>
+                        <p class="modal__text">Документы для записи на обучение:<br>- заявление на зачисление (заполняется в учебном центре);<br>- паспорт гражданина РФ;<br>- СНИЛС;<br>- медкомиссия форма справки 003-О/у и 002-ЧО/у (мед. заключение к исполнению обязанностей частного охранника);</p>
+                        <p class="modal__text">СДАЧА ПЕРИОДИЧЕСКОЙ ПРОВЕРКИ И КВАЛИФИКАЦИОННОГО ЭКЗАМЕНА У ЧАСТНЫХ ОХРАННИКОВ И РАБОТНИКОВ ЮРИДИЧЕСКИХ ЛИЦ С ОСОБЫМИ УСТАВНЫМИ ЗАДАЧАМИ НА УЧЕБНО-МЕТОДИЧЕСКОЙ БАЗЕ НОУ «ЦПП» ПРОВОДИТСЯ БЕСПЛАТНО.</p>
+                    </div>
+                </div>
+                <div class="modal modal--2" data-target="secondary">
+                    <div class="modal__header">Пулевая стрельба</div>
+                </div>
             </div>
         </div>
     </div>

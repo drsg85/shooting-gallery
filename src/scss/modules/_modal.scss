@@ -22,21 +22,38 @@
 
 .modal {
 	background-color: #fff;
-	width: 300px;
-	height: 300px;
-	display: flex;
+	width: 60vh;
+	height: 80vh;
 	align-items: center;
 	justify-content: center;
 	display: none;
 	background-repeat: no-repeat;
 	background-size: cover;
+	border: 1px solid $golden;
+	overflow: overlay;
+}
+
+.modal__header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 15%;
+	background-color: $golden;
+	color: $black;
+	font-size: 40px;
+	font-family: $titleFont;
+	line-height: 40px;
+}
+
+.modal__content {
+	padding: 0 15px;
+	font-family: $titleFont;
 }
 
 .modal--1 {
-	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkgXWUMr_Vcw6KhaHLTy0SNSljgWrMIi5rFQ&usqp=CAU');
-	color: green;
-	font-size: 35px;
-	text-align: center;
+	background-image: url('./img/guard_full.jpg');
+	font-size: 24px;
+	line-height: 30px;
 }
 
 .modal--2 {
