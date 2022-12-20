@@ -2,6 +2,7 @@
 import { tns } from '../../node_modules/tiny-slider/src/tiny-slider.js';
 import MobileMenu from './modules/MobileMenu';
 import './modules/service';
+import './modules/map';
 import Modal from './modules/modal';
 
 // import ToTop from './modules/toTop';
