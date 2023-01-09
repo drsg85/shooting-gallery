@@ -28,14 +28,16 @@ html(lang="en")
                         a.button(href='#service') К услугам
                     p.hero__desc Стань профессионалом или интересно проведи время
             section.about
-                h2.about__title О нас
-                .about__content 
-                    .about__pic 
-                        img(src="./img/about.jpg", alt="Изображение О Нас")
-                    .about__desc 
-                        p.about__text Наш центр является учебно-спортивной базой по подготовке и повышению квалификации граждан, осуществляющих спортивную, охранную деятельность, владельцев гражданского оружия.
-                        p.about__text НОУ "Центр профессиональной подготовки" - это уникальное учебное заведение города Калининграда, осуществляющее следующие виды деятельности в сфере образования и спорта взрослых и молодежи города
-                        p.about__text Сдача периодической проверки и квалификационного экзамена у частных охранников и работников юридических лиц с особыми уставными задачами проводится - бесплатно.
+                .section-header
+                    h2.section-header__title О нас
+                .about__content
+                    .section-content
+                        .section-content__pic 
+                            img(src="./img/about.jpg", alt="Изображение О Нас")
+                        .section-content__desc 
+                            p.section-content__text Наш центр является учебно-спортивной базой по подготовке и повышению квалификации граждан, осуществляющих спортивную, охранную деятельность, владельцев гражданского оружия.
+                            p.section-content__text НОУ "Центр профессиональной подготовки" - это уникальное учебное заведение города Калининграда, осуществляющее следующие виды деятельности в сфере образования и спорта взрослых и молодежи города
+                            p.section-content__text Сдача периодической проверки и квалификационного экзамена у частных охранников и работников юридических лиц с особыми уставными задачами проводится - бесплатно.
                 .about__slider 
                     ul.slider
                         li.about__slider-item.slider-item--family Для&nbsp;всей<br> семьи
@@ -45,40 +47,59 @@ html(lang="en")
                         li.about__slider-item.slider-item--clothes Не&nbsp;требуется спец.одежда       
                         li.about__slider-item.slider-item--educational Образовательное учреждение       
             section.service#service
-                h2.service__title Наши услуги
+                .section-header
+                    h2.section-header__title Наши услуги
                 ul.service__tabs
                     li.service__tab(data-tab='#tab_1') Учебные курсы
-                    li.service__tab(data-tab='#tab_2') Стрельба
+                    li.service__tab(data-tab='#tab_2') Лазертаг
                     li.service__tab(data-tab='#tab_3') Мастерская
                 .service__content
                     .service__content-item#tab_1
                         .practice
-                            .practice__item(data-path='guard')
+                            .practice__item.btns(data-path='guard')
                                 .practice__header
                                     p.practice__title Частный охранник
                                 .practice__image
                                     img(src="./img/guard.jpg", alt="Изображение охранника Тир39")
                                 .service__button.btn Подробнее
-                            .practice__item(data-path='secondary')
+                            .practice__item.btns(data-path='shooting')
                                 .practice__header
                                     p.practice__title Пулевая стрельба
                                 .practice__image
                                     img(src="./img/shooting.jpg", alt="Изображение пулевой стрельбы Тир39")
                                 .service__button.btn Подробнее
-                            .practice__item(data-path='secondary')
+                            .practice__item.btns(data-path='training')
                                 .practice__header
                                     p.practice__title Повышение квалификации
                                 .practice__image
                                     img(src="./img/training.jpg", alt="Изображение повышения квалификации Тир39")
                                 .service__button.btn Подробнее
                     .service__content-item#tab_2
-                        .shooting
-                            h3.shooting__title Стрельба с инструктором
-                            p.shooting__subtitle Всему обучим
+                        .lasertag
+                            .lasertag__content
+                                h3.lasertag__title Лазертаг
+                                .lasertag__text
+                                    p.lasertag__desc <span>Лазерный пейнтбол</span> «Laserwar Kaliningrad»
+                                    p.lasertag__desc Это отличная высокотехнологичная игра, происходящая в&nbsp;реальном времени и&nbsp;пространстве в&nbsp;Калининграде.
+                                .lasertag__button.btns
+                                    .button.btns(data-path='lasertag') Подробнее
+                            .lasertag__deco-line.lasertag__deco-line--yellow безболезненно
+                            .lasertag__deco-line.lasertag__deco-line--white полностью безопасно
                     .service__content-item#tab_3
                         .workshop
-                            h3.workshop__title Пушка на прокачку
-                            p.workshop__subtitle Всему починим
+                            h3.workshop__title Мастерская
+                            p.workshop__subtitle Единственный сертифицированный сервисный центр в г. Калининград по ремонту огнестрельного оружия
+            section.cert
+                .section-header
+                    h2.section-header__title Подарочный сертификат
+                .cert__content
+                    .section-content
+                        .section-content__desc
+                            p.section-content__text Ищите оригинальный подарок?
+                            p.section-content__text Хотите подарить яркие и незабываемые эмоции?
+                            p.section-content__text Подарочный сертификат на стрельбу - это именно то, что вы искали!
+                        .section-content__pic
+                            img(src="./img/cert.png", alt="Подарочный сертификат")
             section.shootingsday
                 .shootingsday__content
                     .shootingsday__header 
@@ -95,7 +116,8 @@ html(lang="en")
                             li.shootingsday__cta-item - с коллегами
                     p.shootingsday__profit Приобретайте море положительных эмоций и&nbsp;позитива!
             section.contacts 
-                h2.contacts__title Наши контакты
+                .section-header
+                    h2.section-header__title Наши контакты
                 .contacts__content
                     .contacts__map
                         .map#map

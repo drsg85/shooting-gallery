@@ -1,0 +1,108 @@
+.lasertag {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 35vw;
+    margin: 0 auto;
+    padding: 80px;
+    background-size: cover; 
+    background-image: url('/img/lasertag.jpg');
+    overflow: hidden;
+
+    @include atDesktopS {
+        height: 500px;
+    }
+}
+
+.lasertag__title {
+    margin: 0;
+    color: $golden;
+    font-size: 45px;
+    font-family: $titleFont;
+    text-transform: uppercase;
+    // letter-spacing: 0.2rem;
+}
+
+.lasertag__text {
+    margin-bottom: 90px;
+}
+
+.lasertag__desc {
+    max-width: 700px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 24px;
+    font-family: $titleFont;
+    font-weight: 400;
+}
+
+.lasertag__desc span {
+    text-transform: uppercase;
+}
+
+.lasertag__deco {
+    position: absolute;
+    width: 100%;
+    // right: -25vw;
+    // top: 50%;
+    // transform: translate(0, -50%);
+}
+
+.lasertag__deco-line {
+    @include atDesktopM {
+        width: 100%;
+        font-size: 24px;
+        font-family: $titleFont;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.lasertag__deco-line--yellow {
+    position: absolute;
+    right: -35%;
+    top: 19%;
+    transform: rotate(45deg);
+    color: white;
+
+    @include atDesktopL {
+        right: -41%;
+        top: 18%;
+    }
+}
+
+.lasertag__deco-line--yellow::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -15px;
+    display: block;
+    width: 100vw;
+    height: 10px;
+    background-color: $golden;
+}
+
+.lasertag__deco-line--white {
+    position: absolute;
+    right: -35%;
+    top: 66%;
+    transform: rotate(-45deg);
+    color: $golden;
+
+    @include atDesktopL {
+        right: -40%;
+        top: 66%;
+    }
+}
+
+.lasertag__deco-line--white::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 30px;
+    display: block;
+    width: 100vw;
+    height: 10px;
+    background-color: white;
+}

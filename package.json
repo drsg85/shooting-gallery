@@ -28,7 +28,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.11",
     "gulp-csso": "^4.0.1",
     "node-sass": "^7.0.3",
     "tiny-slider": "^2.9.4"

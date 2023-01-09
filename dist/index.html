@@ -39,13 +39,17 @@
             </div>
         </header>
         <section class="about">
-            <h2 class="about__title">О нас</h2>
+            <div class="section-header">
+                <h2 class="section-header__title">О нас</h2>
+            </div>
             <div class="about__content">
-                <div class="about__pic"> <img src="./img/about.jpg" alt="Изображение О Нас" /></div>
-                <div class="about__desc">
-                    <p class="about__text">Наш центр является учебно-спортивной базой по подготовке и повышению квалификации граждан, осуществляющих спортивную, охранную деятельность, владельцев гражданского оружия.</p>
-                    <p class="about__text">НОУ "Центр профессиональной подготовки" - это уникальное учебное заведение города Калининграда, осуществляющее следующие виды деятельности в сфере образования и спорта взрослых и молодежи города</p>
-                    <p class="about__text">Сдача периодической проверки и квалификационного экзамена у частных охранников и работников юридических лиц с особыми уставными задачами проводится - бесплатно.</p>
+                <div class="section-content">
+                    <div class="section-content__pic"> <img src="./img/about.jpg" alt="Изображение О Нас" /></div>
+                    <div class="section-content__desc">
+                        <p class="section-content__text">Наш центр является учебно-спортивной базой по подготовке и повышению квалификации граждан, осуществляющих спортивную, охранную деятельность, владельцев гражданского оружия.</p>
+                        <p class="section-content__text">НОУ "Центр профессиональной подготовки" - это уникальное учебное заведение города Калининграда, осуществляющее следующие виды деятельности в сфере образования и спорта взрослых и молодежи города</p>
+                        <p class="section-content__text">Сдача периодической проверки и квалификационного экзамена у частных охранников и работников юридических лиц с особыми уставными задачами проводится - бесплатно.</p>
+                    </div>
                 </div>
             </div>
             <div class="about__slider">
@@ -60,30 +64,32 @@
             </div>
         </section>
         <section class="service" id="service">
-            <h2 class="service__title">Наши услуги</h2>
+            <div class="section-header">
+                <h2 class="section-header__title">Наши услуги</h2>
+            </div>
             <ul class="service__tabs">
                 <li class="service__tab" data-tab="#tab_1">Учебные курсы</li>
-                <li class="service__tab" data-tab="#tab_2">Стрельба</li>
+                <li class="service__tab" data-tab="#tab_2">Лазертаг</li>
                 <li class="service__tab" data-tab="#tab_3">Мастерская</li>
             </ul>
             <div class="service__content">
                 <div class="service__content-item" id="tab_1">
                     <div class="practice">
-                        <div class="practice__item" data-path="guard">
+                        <div class="practice__item btns" data-path="guard">
                             <div class="practice__header">
                                 <p class="practice__title">Частный охранник</p>
                             </div>
                             <div class="practice__image"><img src="./img/guard.jpg" alt="Изображение охранника Тир39" /></div>
                             <div class="service__button btn">Подробнее</div>
                         </div>
-                        <div class="practice__item" data-path="secondary">
+                        <div class="practice__item btns" data-path="shooting">
                             <div class="practice__header">
                                 <p class="practice__title">Пулевая стрельба</p>
                             </div>
                             <div class="practice__image"><img src="./img/shooting.jpg" alt="Изображение пулевой стрельбы Тир39" /></div>
                             <div class="service__button btn">Подробнее</div>
                         </div>
-                        <div class="practice__item" data-path="secondary">
+                        <div class="practice__item btns" data-path="training">
                             <div class="practice__header">
                                 <p class="practice__title">Повышение квалификации</p>
                             </div>
@@ -93,16 +99,41 @@
                     </div>
                 </div>
                 <div class="service__content-item" id="tab_2">
-                    <div class="shooting">
-                        <h3 class="shooting__title">Стрельба с инструктором</h3>
-                        <p class="shooting__subtitle">Всему обучим</p>
+                    <div class="lasertag">
+                        <div class="lasertag__content">
+                            <h3 class="lasertag__title">Лазертаг</h3>
+                            <div class="lasertag__text">
+                                <p class="lasertag__desc"><span>Лазерный пейнтбол</span> «Laserwar Kaliningrad»</p>
+                                <p class="lasertag__desc">Это отличная высокотехнологичная игра, происходящая в&nbsp;реальном времени и&nbsp;пространстве в&nbsp;Калининграде.</p>
+                            </div>
+                            <div class="lasertag__button btns">
+                                <div class="button btns" data-path="lasertag">Подробнее</div>
+                            </div>
+                        </div>
+                        <div class="lasertag__deco-line lasertag__deco-line--yellow">безболезненно</div>
+                        <div class="lasertag__deco-line lasertag__deco-line--white">полностью безопасно</div>
                     </div>
                 </div>
                 <div class="service__content-item" id="tab_3">
                     <div class="workshop">
-                        <h3 class="workshop__title">Пушка на прокачку</h3>
-                        <p class="workshop__subtitle">Всему починим</p>
+                        <h3 class="workshop__title">Мастерская</h3>
+                        <p class="workshop__subtitle">Единственный сертифицированный сервисный центр в г. Калининград по ремонту огнестрельного оружия</p>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="cert">
+            <div class="section-header">
+                <h2 class="section-header__title">Подарочный сертификат</h2>
+            </div>
+            <div class="cert__content">
+                <div class="section-content">
+                    <div class="section-content__desc">
+                        <p class="section-content__text">Ищите оригинальный подарок?</p>
+                        <p class="section-content__text">Хотите подарить яркие и незабываемые эмоции?</p>
+                        <p class="section-content__text">Подарочный сертификат на стрельбу - это именно то, что вы искали!</p>
+                    </div>
+                    <div class="section-content__pic"><img src="./img/cert.png" alt="Подарочный сертификат" /></div>
                 </div>
             </div>
         </section>
@@ -127,7 +158,9 @@
             </div>
         </section>
         <section class="contacts">
-            <h2 class="contacts__title">Наши контакты</h2>
+            <div class="section-header">
+                <h2 class="section-header__title">Наши контакты</h2>
+            </div>
             <div class="contacts__content">
                 <div class="contacts__map">
                     <div class="map" id="map"></div>
@@ -145,8 +178,23 @@
                         <p class="modal__text">СДАЧА ПЕРИОДИЧЕСКОЙ ПРОВЕРКИ И КВАЛИФИКАЦИОННОГО ЭКЗАМЕНА У ЧАСТНЫХ ОХРАННИКОВ И РАБОТНИКОВ ЮРИДИЧЕСКИХ ЛИЦ С ОСОБЫМИ УСТАВНЫМИ ЗАДАЧАМИ НА УЧЕБНО-МЕТОДИЧЕСКОЙ БАЗЕ НОУ «ЦПП» ПРОВОДИТСЯ БЕСПЛАТНО.</p>
                     </div>
                 </div>
-                <div class="modal modal--2" data-target="secondary">
+                <div class="modal modal--2" data-target="shooting">
                     <div class="modal__header">Пулевая стрельба</div>
+                    <div class="modal__content">
+                        <p class="modal__text">Тут будет текст</p>
+                    </div>
+                </div>
+                <div class="modal modal--3" data-target="training">
+                    <div class="modal__header">Повышение квалификации</div>
+                    <div class="modal__content">
+                        <p class="modal__text">Тут будет текст</p>
+                    </div>
+                </div>
+                <div class="modal modal--4" data-target="lasertag">
+                    <div class="modal__header">Всё про лазерный пейнтбол</div>
+                    <div class="modal__content">
+                        <p class="modal__text">Тут будет текст</p>
+                    </div>
                 </div>
             </div>
         </div>

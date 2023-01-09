@@ -1,6 +1,6 @@
 'use strict';
 
-    const btns = document.querySelectorAll('.practice__item');
+    const btns = document.querySelectorAll('.btns');
     const modalOverlay = document.querySelector('.modals__overlay ');
     const modals = document.querySelectorAll('.modal');
 
@@ -8,6 +8,7 @@
         btns.forEach((el) => {
             el.addEventListener('click', (e) => {
                 let path = e.currentTarget.getAttribute('data-path');
+                console.log(path);
         
                 modals.forEach((el) => {
                     el.classList.remove('modal--visible');

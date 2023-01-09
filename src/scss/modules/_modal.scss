@@ -22,7 +22,7 @@
 
 .modal {
 	background-color: #fff;
-	width: 60vh;
+	width: 40vw;
 	height: 80vh;
 	align-items: center;
 	justify-content: center;
@@ -46,22 +46,25 @@
 }
 
 .modal__content {
-	padding: 0 15px;
+	padding: 0 40px;
 	font-family: $titleFont;
 }
 
+.modal {
+	font-size: 20px;
+	line-height: 24px;
+}
+
 .modal--1 {
-	background-image: url('./img/guard_full.jpg');
-	font-size: 24px;
-	line-height: 30px;
+	background-image: url('./img/guard_modal.jpg');
 }
 
 .modal--2 {
-	background-color: tan;
-	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUDdTpf8NQuBtdrBgSKRtn7chovffMKPtiA&usqp=CAU');
-	color: black;
-	font-size: 22px;
-	text-align: right;
+	background-image: url('./img/shooting_modal.jpg');
+}
+
+.modal--3 {
+	background-image: url('./img/training_modal.jpg');
 }
 
 .modals__overlay--visible {
@@ -72,4 +75,23 @@
 
 .modal--visible {
 	display: block;
+}
+
+.modal::-webkit-scrollbar {
+    width: 8px;
+
+    & * {
+        background: transparent;
+    }
+
+    &-thumb {
+        // visual
+        background: $golden;
+        border-radius: 10px;
+    }
+    
+    &-track {
+        // visual
+        background: transparent !important;
+    }
 }

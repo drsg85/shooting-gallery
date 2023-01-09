@@ -1,0 +1,11 @@
+.cert {
+    padding: 0 20px;
+
+    @include atDesktopS {
+        padding: 0 40px;
+    }
+}
+
+.cert__content {
+
+}
