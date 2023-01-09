@@ -1,11 +1,53 @@
-.contacts__title {
-    margin: 0;
-    margin-bottom: 40px;
-    font-family: $titleFont;
-    font-size: 45px;
-    text-align: center;
+.contacts__content {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .contacts__map {
+    max-width: 800px;
+    width: 100%;
     height: 450px;
+}
+
+.contacts__data-title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.contacts__data {
+    margin-bottom: 15px;
+}
+
+.contacts__data-content {
+    display: block;
+    width: fit-content;
+    color: black;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contacts__data-container {
+    display: flex;
+}
+
+.contacts__icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    margin: 0 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+
+.contacts__icon--vk {
+    background-image: url('./img/icons/vk.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }

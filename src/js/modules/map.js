@@ -1,6 +1,5 @@
 const map = L.map('map')
   .on('load', () => {
-    console.log('Карта инициализирована');
   })
   .setView({
     lat: 54.710641,

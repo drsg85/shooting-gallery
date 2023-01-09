@@ -5,12 +5,12 @@ import './modules/service';
 import './modules/map';
 import Modal from './modules/modal';
 
-// import ToTop from './modules/toTop';
+import ToTop from './modules/toTop';
 
 const mobileMenu = new MobileMenu();
 const modal = new Modal();
 // const service = new Service();
-// new ToTop(); 
+new ToTop(); 
 
 if(document.querySelector('.about__slider')) {
   const slider = new tns({
