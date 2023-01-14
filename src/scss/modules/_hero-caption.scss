@@ -1,7 +1,11 @@
 .hero-caption {
     color: $golden;
     font-family: $titleFont;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+
+    @include atscreenXs {
+        margin-bottom: 65px;
+    }
 
     @include atTablet {
         margin-bottom: 45px;
@@ -19,10 +23,15 @@
 
     @include atTablet {
         margin-bottom: 45px;
-        font-size: 60px;
+        font-size: 54px;
         font-weight: 700;
         letter-spacing: 5px;
-        line-height: 65px;
+        line-height: 54px;
+    }
+
+    @include atDesktopS {
+        margin-bottom: 45px;
+        font-size: 60px;
     }
 }
 
@@ -33,9 +42,14 @@
     // font-size: 18px;
 
     @include atTablet {
-        font-size: 60px;
+        font-size: 48px;
         font-weight: 700;
         letter-spacing: 5px;
+        line-height: 48px;
+    }
+
+    @include atDesktopS {
+        font-size: 60px;
         line-height: 65px;
     }
 }

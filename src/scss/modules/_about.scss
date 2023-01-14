@@ -69,9 +69,14 @@
 .about__slider-item {
     position: relative;
     max-width: 250px;
-    margin-right: 80px;
+    margin-right: 100px;
     color: #fff;
-    font-size: 30px;
+    font-size: 14px;
+
+    @include atTablet {
+        margin-right: 80px;
+        font-size: 30px;
+    }
 }
 
 .about__slider-item:last-child {
@@ -82,12 +87,18 @@
     content: '';
     position: absolute;
     display: block;
-    left: -100px;
+    left: -50px;
     top: 0;
-    width: 75px;
-    height: 75px;
+    width: 35px;
+    height: 35px;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include atTablet {
+        left: -100px;
+        width: 75px;
+        height: 75px;
+    }
 }
 
 .slider-item--family::before {

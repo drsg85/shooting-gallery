@@ -6,7 +6,7 @@
     // typography
     color: $black;
     font-family: $titleFont;
-    font-size: 0.7em;
+    font-size: 3.5vw;
     text-transform: uppercase;
 
     // visual
@@ -15,6 +15,12 @@
     background-color: $golden;
     text-decoration: none;
     transition: all ease-in-out 0.2s;
+
+    @include atscreenXs {
+        // padding: 1rem 2rem;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
 
     @include atTablet {
         // padding: 1rem 2rem;

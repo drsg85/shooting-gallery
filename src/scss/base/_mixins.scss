@@ -1,8 +1,15 @@
 // breakpoints
 
+//screenXs
+@mixin atscreenXs {
+    @media (min-width: 560px) {
+        @content;
+    }
+}
+
 // tablets portrait
 @mixin atTablet {
-    @media (min-width: 700px) {
+    @media (min-width: 768px) {
         @content;
     }
 }
