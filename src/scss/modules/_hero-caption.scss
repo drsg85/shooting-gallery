@@ -1,26 +1,43 @@
 .hero-caption {
-    margin-bottom: 90px;
     color: $golden;
     font-family: $titleFont;
+    margin-bottom: 15px;
+
+    @include atTablet {
+        margin-bottom: 45px;
+    }
 }
 
 .hero-caption__title {
     margin: 0;
+    margin-bottom: 5px;
     font-family: $titleFont;
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 5px;
-    line-height: 65px;
+    font-size: 7vw;
+    // font-size: 20px;
+    
     text-transform: uppercase;
+
+    @include atTablet {
+        margin-bottom: 45px;
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        line-height: 65px;
+    }
 }
 
 .hero-caption__subtitle {
     margin: 0;
     font-family: $titleFont;
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 5px;
-    line-height: 65px;
+    font-size: 6vw;
+    // font-size: 18px;
+
+    @include atTablet {
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        line-height: 65px;
+    }
 }
 
 .hero-caption__subtitle span{

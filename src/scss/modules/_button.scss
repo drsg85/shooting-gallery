@@ -1,21 +1,26 @@
 .button {
     // box model
     display: inline-block;
-    padding: 15px 35px;
+    padding: 0.5em 1em;
     
     // typography
     color: $black;
     font-family: $titleFont;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.7em;
     text-transform: uppercase;
 
     // visual
     border: 1px solid $golden;
-    border-radius: 30px;
+    border-radius: 2em;
     background-color: $golden;
     text-decoration: none;
     transition: all ease-in-out 0.2s;
+
+    @include atTablet {
+        // padding: 1rem 2rem;
+        font-size: 2em;
+        font-weight: 700;
+    }
 }
 
 .button:hover {

@@ -54,8 +54,6 @@ body {
 }
 
 .section-content__pic {
-    // margin-right: 120px;
-    // width: 520px;
     max-width: 550px;
 
     @include atDesktopS {
@@ -65,6 +63,10 @@ body {
     @include atDesktopM {
         max-width: 550px;
     }
+}
+
+.section-content__pic--first {
+    margin-bottom: 15px;
 }
 
 .section-content__pic img {
@@ -88,7 +90,11 @@ body {
 .section-content__text {
     margin: 0;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 18px;
+
+    @include atTablet {
+        font-size: 20px;
+    }
 
     @include atDesktopM {
         margin-bottom: 20px;
@@ -98,10 +104,14 @@ body {
 
 .section-header__title {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-family: $titleFont;
     font-size: 45px;
     text-align: center;
+
+    @include atTablet {
+        margin-bottom: 40px;
+    }
 }
 
 html {
