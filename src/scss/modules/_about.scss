@@ -2,6 +2,7 @@
     position: relative;
     margin-bottom: 70px;
     padding: 0 20px;
+    overflow: hidden;
 
     @include atDesktopS {
         padding: 0 40px;
@@ -60,21 +61,28 @@
 .slider {
     display: flex;
     margin: 0;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 50px 150px;
+    padding: 20px 0;
     list-style-type: none;
+    width: 100%;
+
+    @include atTablet {
+        padding: 50px 150px;
+    }
 }
 
 .about__slider-item {
     position: relative;
-    max-width: 250px;
-    margin-right: 100px;
+    // max-width: 250px;
+    // margin-right: 45px;
+    margin-left: 50px;
     color: #fff;
     font-size: 14px;
 
     @include atTablet {
-        margin-right: 80px;
+        margin-left: 100px;
+        // margin-right: 80px;
         font-size: 30px;
     }
 }
@@ -88,9 +96,10 @@
     position: absolute;
     display: block;
     left: -50px;
-    top: 0;
+    top: 50%;
     width: 35px;
     height: 35px;
+    transform: translateY(-50%);
     background-repeat: no-repeat;
     background-size: contain;
 

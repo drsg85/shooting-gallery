@@ -18,12 +18,29 @@ if(document.querySelector('.about__slider')) {
       mode: "carousel",
       controls: false,
       nav: false,
-      items: 3,
+      items: 2,
+      gutter: 20,
+      // edgePadding: 10,
       autoplay: true,
       autoplaySpeed: 0,
       speed: 2000,
       arrows: false,
       swipe: false,
       autoplayButtonOutput: false,
+      responsive: {
+        578: {
+          items: 3,
+        },
+        640: {
+          // items: 2,
+          gutter: 45
+        },
+        700: {
+          items: 3
+        },
+        1400: {
+          items: 4
+        }
+      }
     });
 }
