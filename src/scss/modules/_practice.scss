@@ -11,9 +11,19 @@
     position: relative;
     width: 270px;
     height: 350px;
+    margin-bottom: 15px;
     border: 2px solid $golden;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     cursor: pointer;
+
+    @include atscreenXs {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.practice__item:last-child {
+    margin-bottom: 0;
 }
 
 .practice__header {
