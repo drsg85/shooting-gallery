@@ -1,5 +1,9 @@
 .map {
     max-width: 800px;
-    height: 400px;
+    height: 340px;
     margin: auto;
+
+    @include atTablet {
+        height: 400px;
+    }
 }

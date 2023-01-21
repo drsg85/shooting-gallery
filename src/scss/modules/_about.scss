@@ -63,12 +63,17 @@
     margin: 0;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 0;
+    // padding: 20px 0;
+    padding-top: 2px;
+    padding-bottom: 20px;
     list-style-type: none;
     width: 100%;
 
     @include atTablet {
-        padding: 50px 150px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 32px;
+        padding-bottom: 50px;
     }
 }
 
