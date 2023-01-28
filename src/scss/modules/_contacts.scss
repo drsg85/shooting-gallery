@@ -1,5 +1,5 @@
 .contacts {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 .contacts__content {
@@ -64,13 +64,16 @@
     margin: 0 5px;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
     text-decoration: none;
     transition: ease-in-out 0.2s;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .contacts__icon--vk {
     background-image: url('./img/icons/vk.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.contacts__icon--tg {
+    background-image: url('./img/icons/tg.png');
 }

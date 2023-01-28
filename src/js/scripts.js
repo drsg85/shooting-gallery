@@ -3,7 +3,7 @@ import { tns } from '../../node_modules/tiny-slider/src/tiny-slider.js';
 import MobileMenu from './modules/MobileMenu';
 import './modules/service';
 import './modules/scroll';
-import './modules/map';
+// import './modules/map';
 import Modal from './modules/modal';
 
 import ToTop from './modules/toTop';
@@ -40,7 +40,8 @@ if(document.querySelector('.about__slider')) {
           items: 3
         },
         1400: {
-          items: 4
+          items: 4,
+          gutter: 20
         }
       }
     });

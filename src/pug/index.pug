@@ -120,7 +120,11 @@ html(lang="en")
                     h2.section-header__title Наши контакты
                 .contacts__content
                     .contacts__map
-                        .map#map
+                        div(style='position:relative;overflow:hidden;')
+                            a(href='https://yandex.ru/maps/org/tsentr_professionalnoy_podgotovki/62981728841/?utm_medium=mapframe&utm_source=maps' style='color:#eee;font-size:12px;position:absolute;top:0px;') &TScy;&iecy;&ncy;&tcy;&rcy; &pcy;&rcy;&ocy;&fcy;&iecy;&scy;&scy;&icy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ocy;&jcy; &pcy;&ocy;&dcy;&gcy;&ocy;&tcy;&ocy;&vcy;&kcy;&icy;
+                            a(href='https://yandex.ru/maps/22/kaliningrad/category/shooting_club/184107317/?utm_medium=mapframe&utm_source=maps' style='color:#eee;font-size:12px;position:absolute;top:14px;') &Scy;&tcy;&rcy;&iecy;&lcy;&kcy;&ocy;&vcy;&ycy;&jcy; &kcy;&lcy;&ucy;&bcy;, &tcy;&icy;&rcy; &vcy; &Kcy;&acy;&lcy;&icy;&ncy;&icy;&ncy;&gcy;&rcy;&acy;&dcy;&iecy;
+                            iframe.frame(src='https://yandex.ru/map-widget/v1/?ll=20.487711%2C54.710728&mode=poi&poi%5Bpoint%5D=20.485273%2C54.710641&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D62981728841&z=16.89' allowfullscreen='true')
+                        //- .map#map
                     .contacts__container
                         .contacts__data
                             p.contacts__data-title Адрес:
@@ -135,8 +139,8 @@ html(lang="en")
                         .contacts__data
                             p.contacts__data-title Соцсети:
                             .contacts__data-container
-                                a.contacts__icon.contacts__icon--vk(href="https://vk.com/" target='_blank')
-                                a.contacts__icon.contacts__icon--vk(href="https://vk.com/" target='_blank')
+                                a.contacts__icon.contacts__icon--vk(href="https://vk.com/club129306944" target='_blank')
+                                a.contacts__icon.contacts__icon--tg(href="https://t.me/GUNduras" target='_blank')
 
             footer.footer
                 .footer__content
