@@ -10,6 +10,16 @@
     @include atTablet {
         flex-direction: row;
         justify-content: space-evenly;
+        padding: 0 40px;
+        gap: 20px;
+    }
+
+    @include atDesktopS {
+        gap: 30px;
+    }
+
+    @include atDesktopM {
+        gap: 40px;
     }
 }
 

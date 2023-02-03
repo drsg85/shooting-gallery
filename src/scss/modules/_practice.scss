@@ -41,6 +41,10 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+
+    @include atTablet {
+        font-size: 18px;
+    }
 }
 
 .practice__image {
