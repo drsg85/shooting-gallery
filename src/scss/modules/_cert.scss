@@ -5,6 +5,10 @@
     @include atDesktopS {
         padding: 0 40px;
     }
+
+    @include atDesktopM {
+        margin-bottom: 90px;
+    }
 }
 
 .cert__content {

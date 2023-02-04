@@ -112,6 +112,11 @@ body {
     @include atTablet {
         margin-bottom: 40px;
     }
+
+    @include atDesktopS {
+        margin-bottom: 60px;
+        font-size: 52px;
+    }
 }
 
 html {

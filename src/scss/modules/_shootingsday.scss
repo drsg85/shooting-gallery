@@ -11,6 +11,10 @@
     @include atTablet {
         padding: 50px 50px;
     }
+
+    @include atDesktopM {
+        margin-bottom: 90px;
+    }
 }
 
 .shootingsday__content {

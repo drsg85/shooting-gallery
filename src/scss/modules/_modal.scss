@@ -33,6 +33,14 @@
 	background-size: cover;
 	border: 1px solid $golden;
 	overflow: overlay;
+
+	@include atTablet {
+        max-width: 550px;
+    }
+
+	@include atDesktopM {
+        max-width: 650px;
+    }
 }
 
 .modal__header {
@@ -122,12 +130,12 @@
   &:after, &:before {
     
     content:"";
-    height:20px;
-    width:20px;
-    border-top:1px solid #000;
-    position:absolute;
-    top:7px;
-    right:-8px;
+    height: 20px;
+    width: 20px;
+    border-top: 1px solid #000;
+    position: absolute;
+    top: 7px;
+    right: -8px;
     transform: rotate(-45deg);
   
   }

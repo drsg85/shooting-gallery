@@ -26,6 +26,10 @@
     margin-bottom: 0;
 }
 
+.practice__item:hover .service__button {
+    color: $light;
+}
+
 .practice__header {
     display: flex;
     align-items: center;

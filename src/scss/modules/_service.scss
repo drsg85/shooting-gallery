@@ -6,6 +6,10 @@
     @include atTablet {
         padding: 0 40px;
     }
+
+    @include atDesktopM {
+        margin-bottom: 90px;
+    }
 }
 
 .service__title {

@@ -16,6 +16,10 @@
         padding-top: 15px;
         background-position-x: 50%;
     }
+
+    @include atDesktopM {
+        margin-bottom: 90px;
+    }
 }
 
 .hero__top {

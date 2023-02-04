@@ -16,7 +16,9 @@
     overflow: hidden;
 
     @include atTablet {
-        height: 35vw;
+        height: 70vw;
+        margin-left: -40px;
+        margin-right: -40px;
         padding: 80px;
     }
 
@@ -40,7 +42,9 @@
 }
 
 .lasertag__text {
-    // margin-bottom: 190px;
+    @include atDesktopM {
+        margin-bottom: 60px;
+    }
 }
 
 .lasertag__desc {
@@ -115,6 +119,7 @@
     width: 100vw;
     height: 10px;
     background-color: $golden;
+    box-shadow: 0px 0px 6px 7px rgba(253, 220, 81, 0.2);
 }
 
 .lasertag__deco-line--white {
@@ -144,4 +149,5 @@
     width: 100vw;
     height: 10px;
     background-color: white;
+    box-shadow: 0px 0px 6px 7px rgba(255, 255, 255, 0.2);
 }

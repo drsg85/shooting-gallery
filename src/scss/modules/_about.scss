@@ -7,6 +7,11 @@
     @include atTablet {
         padding: 0 40px;
     }
+
+    @include atDesktopM {
+        margin-bottom: 90px;
+        overflow: initial;
+    }
 }
 
 .about::before {
@@ -15,6 +20,7 @@
     position: absolute;
     background-image: url('./img/target_grey.png');
     background-repeat: no-repeat;
+    background-size: contain;
     bottom: 0;
     left: -530px;
     width: 100%;
@@ -51,10 +57,12 @@
 
 .about__slider {
     margin: 40px -20px;
+    margin-bottom: 0;
     background-color: $black;
 
     @include atDesktopS {
         margin: 60px -40px;
+        margin-bottom: 0;
     }
 }
 
