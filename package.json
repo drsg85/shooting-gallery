@@ -1,5 +1,5 @@
 {
-  "name": "starter",
+  "name": "tir39",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/drsg85/Starter.git"
   },
-  "author": "RB",
+  "author": "Roman Bagel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/drsg85/Starter/issues"

@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // width: 100%;
     height: 80vh;
     margin: 0 auto;
     margin-left: -20px;
@@ -34,7 +33,6 @@
     font-size: 36px;
     font-family: $titleFont;
     text-transform: uppercase;
-    // letter-spacing: 0.2rem;
 
     @include atTablet {
         font-size: 45px;
@@ -73,9 +71,6 @@
 .lasertag__deco {
     position: absolute;
     width: 100%;
-    // right: -25vw;
-    // top: 50%;
-    // transform: translate(0, -50%);
 }
 
 .lasertag__deco-line {

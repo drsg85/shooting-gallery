@@ -41,12 +41,6 @@
     z-index: -1;
 }
 
-.about__content {
-    // display: flex;
-    // margin-bottom: 70px;
-    // padding: 0 150px;
-}
-
 .section__text {
     margin: 0;
     margin-bottom: 30px;
@@ -71,7 +65,6 @@
     margin: 0;
     justify-content: space-around;
     align-items: center;
-    // padding: 20px 0;
     padding-top: 2px;
     padding-bottom: 20px;
     list-style-type: none;
@@ -87,15 +80,12 @@
 
 .about__slider-item {
     position: relative;
-    // max-width: 250px;
-    // margin-right: 45px;
     margin-left: 50px;
     color: #fff;
     font-size: 14px;
 
     @include atTablet {
         margin-left: 100px;
-        // margin-right: 80px;
         font-size: 30px;
     }
 }
