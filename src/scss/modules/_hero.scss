@@ -6,7 +6,7 @@
     margin-bottom: 70px;
     padding: 20px;
     background-size: cover; 
-    background-image: url('/img/header.jpg');
+    background-image: url('./img/header.jpg');
 
     @include atTablet {
         height: 650px;
